@@ -2124,6 +2124,8 @@ export const esOverrides = {
       defaultsLabel: 'Valores predeterminados',
       reasoning: 'Razonamiento',
       reasoningOff: 'Desactivado',
+      speed: 'Velocidad',
+      speedStandard: 'Estándar',
       defaultsFailed: 'No se pudieron guardar los valores predeterminados del modelo',
       loadFailed: 'No se pudieron cargar los modelos',
       restartRequired:
@@ -2883,6 +2885,7 @@ export const esOverrides = {
         no_interactive_session: 'sin sesión interactiva',
         version_too_old: 'versión demasiado antigua',
         missing_app: 'falta la app',
+        unsupported_gpu: 'GPU no compatible',
         unknown: 'estado desconocido'
       },
       catalogTitle: 'Catálogo de plugins',
@@ -3329,6 +3332,9 @@ export const esOverrides = {
     replaceValue: 'Reemplazar valor actual',
     openDocs: 'Abrir docs',
     clearField: key => `Limpiar ${key}`,
+    addListEntry: 'Añadir otro',
+    removeListEntry: 'Quitar',
+    listEntryPlaceholder: 'Introduce un ID',
     enableAria: name => `Activar ${name}`,
     disableAria: name => `Desactivar ${name}`,
     platformEnabled: name => `${name} activado`,
@@ -3409,7 +3415,7 @@ export const esOverrides = {
       },
       TELEGRAM_ALLOWED_USERS: {
         label: 'IDs de usuarios de Telegram permitidos',
-        help: 'Recomendado. IDs numéricos separados por comas desde @userinfobot. Sin esto, cualquiera puede enviar DM a tu bot.'
+        help: 'Recomendado. IDs numéricos (uno por casilla) desde @userinfobot. Sin esto, cualquiera puede enviar DM a tu bot.'
       },
       TELEGRAM_PROXY: {
         label: 'URL de proxy',
@@ -3421,7 +3427,7 @@ export const esOverrides = {
       },
       DISCORD_ALLOWED_USERS: {
         label: 'IDs de usuarios de Discord permitidos',
-        help: 'Recomendado. IDs de usuarios de Discord separados por comas.'
+        help: 'Recomendado. IDs de usuarios de Discord (uno por casilla).'
       },
       DISCORD_REPLY_TO_MODE: {
         label: 'Estilo de respuesta',
@@ -3471,7 +3477,7 @@ export const esOverrides = {
       },
       SLACK_ALLOWED_USERS: {
         label: 'IDs de usuarios de Slack permitidos',
-        help: 'Recomendado. IDs de Slack separados por comas.'
+        help: 'Recomendado. IDs de Slack (uno por casilla).'
       },
       MATTERMOST_URL: {
         label: 'URL del servidor',
@@ -3482,7 +3488,7 @@ export const esOverrides = {
       },
       MATTERMOST_ALLOWED_USERS: {
         label: 'IDs de usuarios permitidos',
-        help: 'Recomendado. IDs de Mattermost separados por comas.'
+        help: 'Recomendado. IDs de Mattermost (uno por casilla).'
       },
       MATRIX_HOMESERVER: {
         label: 'URL del homeserver',
@@ -3497,7 +3503,7 @@ export const esOverrides = {
       },
       MATRIX_ALLOWED_USERS: {
         label: 'IDs de usuarios de Matrix permitidos',
-        help: 'Recomendado. IDs separados por comas en formato @usuario:servidor.'
+        help: 'Recomendado. IDs (uno por casilla) en formato @usuario:servidor.'
       },
       SIGNAL_HTTP_URL: {
         label: 'URL del puente Signal',
@@ -3510,7 +3516,7 @@ export const esOverrides = {
       },
       SIGNAL_ALLOWED_USERS: {
         label: 'Usuarios de Signal permitidos',
-        help: 'Recomendado. Identificadores de Signal separados por comas.'
+        help: 'Recomendado. Identificadores de Signal (uno por casilla).'
       },
       WHATSAPP_ENABLED: {
         label: 'Activar puente de WhatsApp',
@@ -3521,7 +3527,7 @@ export const esOverrides = {
       },
       WHATSAPP_ALLOWED_USERS: {
         label: 'Usuarios de WhatsApp permitidos',
-        help: 'Recomendado. Números de teléfono o IDs de WhatsApp separados por comas.'
+        help: 'Recomendado. Números de teléfono o IDs de WhatsApp (uno por casilla).'
       }
     },
     platformIntro: {}
@@ -5082,6 +5088,8 @@ export const esOverrides = {
       options: 'Opciones',
       thinking: 'Razonamiento',
       fast: 'Rápido',
+      ultrafast: 'Ultrafast',
+      useStandardSpeed: 'Usar velocidad estándar',
       effort: 'Esfuerzo',
       minimal: 'Mínimo',
       low: 'Bajo',
